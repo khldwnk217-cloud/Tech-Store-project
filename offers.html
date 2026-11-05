@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Store | Special Offers</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <!-- ملفات التنسيق CSS -->
+
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/offers.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="Tech Store Logo" />
+        </a>
+        <nav>
+          <i class="fa-solid fa-bars toggle-menu"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="offers.html" class="active">Offers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+
+          <div class="form">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Flash Offer Banner -->
+    <section class="flash-banner">
+      <div class="container">
+        <div class="banner-content">
+          <span class="badge-flash"
+            ><i class="fa-solid fa-bolt"></i> Limited Time Offer</span
+          >
+          <h2>Weekend Tech Mega Sale</h2>
+          <p>Get up to 30% off on selected laptop & smartphone accessories.</p>
+
+          <!-- Timer -->
+          <div class="timer-box">
+            <div class="time">
+              <span id="hours">08</span><small>Hours</small>
+            </div>
+            <div class="time">
+              <span id="minutes">45</span><small>Mins</small>
+            </div>
+            <div class="time">
+              <span id="seconds">12</span><small>Secs</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Coupons Section -->
+    <section class="coupons-section">
+      <div class="container">
+        <div class="main-heading">
+          <h2>Exclusive Promo Codes</h2>
+          <p>Use these codes at checkout to save more</p>
+        </div>
+
+        <div class="coupons-grid">
+          <div class="coupon-card">
+            <div class="coupon-left">
+              <h3>15% OFF</h3>
+              <p>On First Order</p>
+            </div>
+            <div class="coupon-right">
+              <span class="code">FIRST15</span>
+              <small>Valid until end of month</small>
+            </div>
+          </div>
+
+          <div class="coupon-card">
+            <div class="coupon-left">
+              <h3>$50 OFF</h3>
+              <p>Orders over $500</p>
+            </div>
+            <div class="coupon-right">
+              <span class="code">SAVE50</span>
+              <small>Laptops & Mobiles only</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Bundle Deals -->
+    <section class="bundles-section">
+      <div class="container">
+        <div class="main-heading">
+          <h2>Value Bundles</h2>
+          <p>Buy together and save big</p>
+        </div>
+
+        <div class="bundles-grid">
+          <!-- Bundle 1 -->
+          <div class="bundle-card">
+            <div class="bundle-badge">Best Value</div>
+            <div class="bundle-icon">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h3>Gamer Starter Pack</h3>
+            <ul class="bundle-list">
+              <li>
+                <i class="fa-solid fa-check"></i> High-Performance Gaming Laptop
+              </li>
+              <li><i class="fa-solid fa-check"></i> RGB Mechanical Keyboard</li>
+              <li><i class="fa-solid fa-check"></i> Wireless Gaming Mouse</li>
+            </ul>
+            <div class="price-box">
+              <span class="old-price">$1350</span>
+              <span class="new-price">$1099</span>
+            </div>
+            <a href="contact.html" class="claim-btn">Claim Bundle</a>
+          </div>
+
+          <!-- Bundle 2 -->
+          <div class="bundle-card">
+            <div class="bundle-badge">Popular</div>
+            <div class="bundle-icon">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <h3>Mobile Pro Kit</h3>
+            <ul class="bundle-list">
+              <li><i class="fa-solid fa-check"></i> Flagship Smartphone</li>
+              <li>
+                <i class="fa-solid fa-check"></i> Noise Cancelling Earbuds
+              </li>
+              <li><i class="fa-solid fa-check"></i> 20W Fast Charger</li>
+            </ul>
+            <div class="price-box">
+              <span class="old-price">$850</span>
+              <span class="new-price">$699</span>
+            </div>
+            <a href="contact.html" class="claim-btn">Claim Bundle</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>TECH-STORE</h2>
+            <p>Smart Technology. Better Choice.</p>
+          </div>
+
+          <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Offers</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+            <a href="login.html">login</a>
+          </div>
+
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>© 2026 Tech-Store. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/offers.js"></script>
+  </body>
+</html>

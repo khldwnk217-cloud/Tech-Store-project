@@ -1,0 +1,248 @@
+/* =========================
+   CSS VARIABLES
+========================= */
+:root {
+  /* Main Colors */
+  --primary-color: #0f172a;
+  --secondary-color: #1e293b;
+  --accent-color: #fbbf24;
+  --accent2-color: #dac283;
+
+  /* Backgrounds */
+  --background-color: #f8fafc;
+  --white-color: #ffffff;
+  --card-color: #ffffff;
+
+  /* Text */
+  --text-color: #1e293b;
+  --text-light: #64748b;
+  --text-white: #ffffff;
+
+  /* Borders */
+  --border-color: #e2e8f0;
+
+  /* States */
+  --success-color: #22c55e;
+  --danger-color: #ef4444;
+
+  /* Effects */
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  --border-radius: 8px;
+
+  /* Sizes */
+  --container-width: 1200px;
+}
+
+/* 1. Global Reset & Full Width Slider Support */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
+/* =============== */
+/* Flash Banner */
+/* =============== */
+.flash-banner {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--white-color);
+  padding: 60px 0;
+  text-align: center;
+  border-bottom: 3px solid var(--accent-color);
+}
+
+.badge-flash {
+  background-color: var(--danger-color);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.flash-banner h2 {
+  font-size: 32px;
+  margin: 15px 0 10px;
+}
+
+.timer-box {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.timer-box .time {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--accent-color);
+  padding: 10px 18px;
+  border-radius: 8px;
+  min-width: 70px;
+}
+
+.timer-box .time span {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.timer-box .time small {
+  font-size: 11px;
+  color: #cbd5e1;
+}
+
+/* ----------------*/
+/* Coupons Section */
+/* ----------------*/
+.coupons-section {
+  padding: 50px 0;
+  background-color: var(--background-color);
+}
+
+.coupons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.coupon-card {
+  display: flex;
+  background: white;
+  border: 2px dashed var(--accent-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.coupon-left {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+}
+
+.coupon-left h3 {
+  color: var(--accent-color);
+  font-size: 20px;
+  margin: 0;
+}
+
+.coupon-right {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1.5;
+}
+
+.coupon-right .code {
+  font-weight: bold;
+  background: #f1f5f9;
+  padding: 5px 12px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+}
+
+/* Bundles Section */
+.bundles-section {
+  padding: 60px 0;
+  background: white;
+}
+
+.bundles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.bundle-card {
+  position: relative;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+.bundle-card:hover {
+  transform: translatey(-3px);
+}
+
+.bundle-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.bundle-icon i {
+  font-size: 45px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.bundle-list {
+  list-style: none;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.bundle-list li {
+  font-size: 14px;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+.bundle-list i {
+  color: var(--success-color);
+  margin-right: 8px;
+}
+
+.price-box {
+  margin-bottom: 20px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: var(--text-light);
+  margin-right: 10px;
+}
+
+.new-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--danger-color);
+}
+
+.claim-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.claim-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}

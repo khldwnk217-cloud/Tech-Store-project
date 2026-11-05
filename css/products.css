@@ -1,0 +1,319 @@
+/* =========================
+   CSS VARIABLES
+========================= */
+:root {
+  /* Main Colors */
+  --primary-color: #0f172a;
+  --secondary-color: #1e293b;
+  --accent-color: #fbbf24;
+  --accent2-color: #dac283;
+
+  /* Backgrounds */
+  --background-color: #f8fafc;
+  --white-color: #ffffff;
+  --card-color: #ffffff;
+
+  /* Text */
+  --text-color: #1e293b;
+  --text-light: #64748b;
+  --text-white: #ffffff;
+
+  /* Borders */
+  --border-color: #e2e8f0;
+
+  /* States */
+  --success-color: #22c55e;
+  --danger-color: #ef4444;
+
+  /* Effects */
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  --border-radius: 8px;
+
+  /* Sizes */
+  --container-width: 1200px;
+}
+
+/* 1. Global Reset & Full Width Slider Support */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
+/* 2. Slider Stretch Fix */
+.my-slider,
+.my-slider .carousel-inner,
+.my-slider .carousel-item,
+.my-slider .carousel-item img {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* =========================
+   PRODUCTS SLIDER
+========================= */
+.my-slider {
+  margin-top: 60px;
+}
+
+/* Gradient Overlay over Slider Images */
+#carouselExampleFade .carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.4),
+    rgba(15, 23, 42, 0.75)
+  );
+  z-index: 1;
+}
+
+/* Caption Formatting */
+.my-slider .carousel-caption {
+  position: absolute;
+  bottom: 10% !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 600px;
+  background: rgba(15, 23, 42, 0.65);
+  padding: 15px 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  z-index: 1;
+  bottom: 22%;
+}
+.my-slider .carousel-caption h2 {
+  color: #fbbf24 !important;
+  font-size: 1.4rem !important;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.my-slider .carousel-caption p {
+  color: #ffffff !important;
+  font-size: 0.9rem !important;
+  margin-bottom: 10px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10% !important;
+}
+.my-slider .carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  min-height: 280px;
+  overflow: hidden;
+}
+
+.my-slider .carousel-item {
+  height: 100% !important;
+}
+
+.my-slider .carousel-item img {
+  height: 100% !important;
+  object-fit: cover;
+}
+
+/* =========================
+   OUR PRODUCTS SECTION
+========================= */
+.our-products {
+  background-color: var(--background-color);
+  padding: 60px 0;
+}
+
+.our-products .main-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.our-products .main-heading h2 {
+  color: var(--primary-color);
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.our-products .main-heading p {
+  color: var(--text-light);
+}
+
+/* Products Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Product Card */
+.product-card {
+  background-color: var(--white-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 15px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  color: var(--text-color);
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.product-card .price {
+  color: var(--accent-color);
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.product-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  transition: 0.3s;
+}
+
+.product-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+/* =========================
+   PRODUCTS FEATURES & STATS
+========================= */
+.products-features {
+  padding: 60px 0;
+  background-color: #ffffff;
+  border-top: 1px solid var(--border-color);
+}
+
+.features-header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 40px;
+}
+
+.features-header h2 {
+  color: var(--primary-color);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.features-header p {
+  color: var(--text-light);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 45px;
+}
+
+.feature-box {
+  background: var(--background-color);
+  padding: 30px 20px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-box i {
+  font-size: 36px;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+}
+
+.feature-box h3 {
+  font-size: 18px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.feature-box p {
+  color: var(--text-light);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Stats Banner */
+.products-stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 25px;
+  border-radius: var(--border-radius);
+  color: var(--white-color);
+  text-align: center;
+}
+
+.stat-item h4 {
+  font-size: 26px;
+  color: var(--accent-color);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.stat-item p {
+  font-size: 13px;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
